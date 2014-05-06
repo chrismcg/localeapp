@@ -20,4 +20,4 @@ module Localeapp
   end
 end
 
-ActionView::Base.send(:include, ::Localeapp::ForceExceptionHandlerInTranslationHelper)
+ActionView::Helpers::TranslationHelper.send(:include, ::Localeapp::ForceExceptionHandlerInTranslationHelper)
